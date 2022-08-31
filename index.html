@@ -1,3 +1,10 @@
+
+
+
+<img id="qrcode" src="" width="512" height="512">
+<a id="url" href="#">jhhghj</a>
+
+
 <script>
     function findGetParameter(parameterName) {
         var result = null,
@@ -13,14 +20,10 @@
     }
 
     var url = findGetParameter('url');
-    document.getElementById("myImg").src = "https://chart.googleapis.com/chart?chs=512x512&cht=qr&choe=UTF-8&chl=" + url;
+    document.getElementById("qrcode").src = "https://chart.googleapis.com/chart?chs=512x512&cht=qr&choe=UTF-8&chl=" + url;
 
     var atag = document.getElementById("url");
     atag.setAttribute('href', url);
     atag.text = url;
     
 </script>
-
-
-<img id="qrcode" src="" width="512" height="512">
-<a id="url" href="#">jhhghj</a>
