@@ -2,6 +2,7 @@
 <div>
     <img id="qrcode" src="" width="512" height="512">
     <a id="url" href="#"></a>
+    <a id="branch" href="#"></a>
 </div>
 
 <script>
@@ -19,6 +20,8 @@
     }
 
     var url = findGetParameter('url');
+    var branch = findGetParameter('branch');
+    
     document.getElementById("qrcode").src = "https://chart.googleapis.com/chart?chs=512x512&cht=qr&choe=UTF-8&chl=" + url;
 
     var atag = document.getElementById("url");
